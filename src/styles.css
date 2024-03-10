@@ -1,1 +1,116 @@
 /* You can add global styles to this file, and also import other style files */
+
+
+/* @font-face {
+    font-family: 'Ogg';
+    src: url('')format("woff");
+
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'OggItalic';
+    src: url('')format("woff");
+
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+} */
+
+
+:root {
+
+
+    /* Typography */
+    --main-font: 'Inter', sans-serif;
+    --secondary-font: 'Baskervville', serif;
+    --joker-font: 'Syne', sans-serif;
+    --hero-font: 'Ogg', serif;
+    --hero-font-light: 'OggItalic', serif;
+
+    /* Colors */
+    --main-color: #014f79;
+    --secondary-color: #014f79;
+    --third-color: #539d88;
+
+    --bg-color: #fcfcfc;
+
+    --red-delete: #ae1313;
+    --edit-color: #ffc800;
+
+    --white: #ffffff;
+    --light-grey: #E8E8E8;
+    --dark-grey: #808080;
+
+    --black: #1A1A1A;
+
+    /* Spaces */
+    --main-padding: 1.25rem;
+    --double-padding: calc(var(--main-padding) * 2);
+
+    /* Contents */
+    --main-B-Radius: 1.25rem;
+
+
+}
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--main-color);
+    font-family: var(--main-font);
+    font-size: 1rem;
+}
+
+
+/* Clases Globales */
+
+/* GENERALES */
+
+
+
+
+
+
+
+/* FOOTERS */
+
+.footer__info {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+
+
+/* //////////// */
+/* Clases Bootstrap Editadas */
+
+
+
+
+/* MEDIA QUERYS */
+
+
+@media (max-width: 75rem) {}
+
+@media (max-width: 64rem) {}
+
+@media (max-width: 48rem) {}
+
+@media (max-width: 30rem) {}

@@ -1,0 +1,19 @@
+html {
+    scroll-behavior: smooth;
+    position: relative;
+}
+
+
+#fade-in-animation {
+    animation: fadein 1s;
+}
+
+@keyframes fadein {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
