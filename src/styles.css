@@ -1,20 +1,4 @@
-/* @font-face {
-    font-family: 'Ogg';
-    src: url('')format("woff");
-
-    font-weight: 300;
-    font-style: normal;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'OggItalic';
-    src: url('')format("woff");
-
-    font-weight: 300;
-    font-style: normal;
-    font-display: swap;
-} */
+@import url('./assets/fonts.css');
 
 
 
@@ -22,34 +6,33 @@
 
 
     /* Typography */
-    --main-font: 'Inter', sans-serif;
-    --secondary-font: 'Baskervville', serif;
-    --joker-font: 'Syne', sans-serif;
-    --hero-font: 'Ogg', serif;
-    --hero-font-light: 'OggItalic', serif;
+    --main-font: 'Favorit', sans-serif;
+    --secondary-font: 'Favorit Mono', serif;
+    --joker-font: sans-serif;
+
 
     /* Colors */
-    --main-color: #014f79;
-    --secondary-color: #014f79;
-    --third-color: #539d88;
+    --main-color: #002A94;
+    --secondary-color: #0BF43E;
+    --third-color: #6788DE;
 
-    --bg-color: #fcfcfc;
+    --bg-color: #FCFCFD;
 
     --red-delete: #ae1313;
     --edit-color: #ffc800;
 
     --white: #ffffff;
-    --light-grey: #E8E8E8;
+    --grey-90: #E4E4E6;
     --dark-grey: #808080;
 
-    --black: #1A1A1A;
+    --black: #121212;
 
     /* Spaces */
-    --main-padding: 1.25rem;
+    --main-padding: 0.9rem;
     --double-padding: calc(var(--main-padding) * 2);
 
     /* Contents */
-    --main-B-Radius: 1.25rem;
+    --main-B-Radius: 0.9rem;
 
 
 }
@@ -61,31 +44,37 @@
 /* Clases Globales */
 
 /* GENERALES */
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-img {
-    width: 100%;
-    height: auto;
-    display: block;
+html {
+    font-size: 16px;
 }
 
 body {
 
     min-height: 100vh;
     font-size: 1rem;
+    font-weight: 300;
     font-family: var(--main-font);
     color: var(--negro);
     background-color: var(--bg-color);
-    line-height: 1.4em;
+    line-height: 1.3em;
     font-smooth: always;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
+
+.page__wrapper {
+    padding: var(--main-padding);
+}
+
+.section__title {
+    font-size: 4rem;
+    letter-spacing: -0.1rem;
+    line-height: 3.8rem;
+    color: var(--main-color);
+    text-wrap: balance;
+}
+
+
 
 
 /* FOOTERS */

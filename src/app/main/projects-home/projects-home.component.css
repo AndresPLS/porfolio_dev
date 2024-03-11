@@ -1,0 +1,13 @@
+section article {
+    width: 50%;
+}
+
+.projects__img {
+    border-radius: var(--main-B-Radius);
+    aspect-ratio: 5 / 3;
+}
+
+.home__projects {
+    display: flex;
+    gap: var(--main-padding);
+}
