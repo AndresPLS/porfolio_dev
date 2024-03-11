@@ -1,6 +1,5 @@
 import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
-import { RouterModule } from '@angular/router';
 import { HeroComponent } from '../hero/hero.component';
 import { ContactComponent } from '../contact/contact.component';
 import { SkillsComponent } from '../skills/skills.component';
