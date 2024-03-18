@@ -6,14 +6,14 @@
 
 
     /* Typography */
-    --main-font: 'Favorit', sans-serif;
-    --secondary-font: 'Favorit Mono', serif;
+    --main-font: 'Roobert', sans-serif;
+    --secondary-font: 'Roobert Mono', serif;
     --joker-font: sans-serif;
 
 
     /* Colors */
     --main-color: #002A94;
-    --secondary-color: #0BF43E;
+    --secondary-color: #06ea43;
     --third-color: #6788DE;
 
     --bg-color: #FCFCFD;
@@ -23,16 +23,21 @@
 
     --white: #ffffff;
     --grey-90: #E4E4E6;
+    --grey-80: #CACACE;
+    --grey-70: #AFB0B6;
+    --grey-50: #797C86;
     --dark-grey: #808080;
 
-    --black: #121212;
+    --black: #131316;
+    --dark-20: #2F2F37;
+    --dark-30: #474752;
 
     /* Spaces */
     --main-padding: 0.9rem;
     --double-padding: calc(var(--main-padding) * 2);
 
     /* Contents */
-    --main-B-Radius: 0.9rem;
+    --main-b-radius: 0.9rem;
 
 
 }
@@ -52,29 +57,142 @@ body {
 
     min-height: 100vh;
     font-size: 1rem;
-    font-weight: 300;
+    font-weight: 200;
     font-family: var(--main-font);
-    color: var(--negro);
+    color: var(--black);
     background-color: var(--bg-color);
-    line-height: 1.3em;
+    line-height: 1.4;
     font-smooth: always;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
+
+header {
+    position: fixed;
+    width: calc(100vw - var(--double-padding));
+    margin: 0 auto;
+    z-index: 1;
+}
+
 
 .page__wrapper {
     padding: var(--main-padding);
 }
 
 .section__title {
-    font-size: 4rem;
-    letter-spacing: -0.1rem;
-    line-height: 3.8rem;
+    font-size: 10rem;
+    letter-spacing: -0.5rem;
+    line-height: 8.3rem;
     color: var(--main-color);
     text-wrap: balance;
 }
 
 
+
+/* NAVBAR */
+
+
+.nav__container {
+    display: flex;
+    justify-content: space-between;
+
+
+    & ul {
+        display: flex;
+        list-style: none;
+        padding-left: 0;
+
+    }
+}
+
+.nav__container ul {
+    gap: 0.4rem;
+}
+
+
+
+.nav__bubble {
+    color: var(--white);
+    background-color: var(--main-color);
+    padding: 0.36rem 1.5rem 0.4rem 1.5rem;
+    border-radius: var(--main-b-radius);
+    transition: 0.3s;
+
+    &:hover {
+        cursor: pointer;
+        background-color: var(--secondary-color);
+    }
+}
+
+.nav__bigBubble {
+    display: flex;
+    background-color: var(--main-color);
+    border-radius: var(--main-b-radius);
+
+    &:hover {
+
+        & .nav__cv {
+            background-color: var(--main-color);
+            color: var(--white);
+        }
+
+    }
+}
+
+.nav__nameBubble {
+    font-weight: 400;
+    color: var(--main-color);
+    background-color: var(--grey-90);
+    padding: 0.36rem 1.5rem 0.4rem 1.5rem;
+    border-radius: var(--main-b-radius);
+    transition: 0.3s;
+
+
+}
+
+.nav__bigBubble .nav__cv {
+    color: var(--main-color);
+    background-color: var(--secondary-color);
+    padding: 0.36rem 1.5rem 0.4rem 1.5rem;
+    border-radius: 0.8rem;
+    transition: 0.3s;
+
+    &:hover {
+        cursor: pointer;
+        background-color: var(--third-color);
+    }
+}
+
+.nav__image {
+    height: 100%;
+    color: var(--main-color);
+    background-color: var(--secondary-color);
+    width: 36px;
+    border-radius: var(--main-b-radius);
+    transition: 0.3s;
+    background-image: url(./assets/images/andres_polo_developer.jpg);
+    background-size: cover;
+
+    &:hover {
+        cursor: pointer;
+        background-color: var(--third-color);
+    }
+}
+
+
+.nav__workIn {
+    color: var(--dark-20);
+    background-color: var(--grey-90);
+    padding: 0.36rem 1.3rem 0.4rem 1.5rem;
+
+    border-radius: var(--main-b-radius);
+    transition: 0.3s;
+
+    &:hover {
+        cursor: pointer;
+        background-color: var(--secondary-color);
+    }
+}
 
 
 /* FOOTERS */

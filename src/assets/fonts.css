@@ -71,3 +71,91 @@
     font-style: normal;
     font-display: swap;
 }
+
+
+
+
+
+
+
+
+
+@font-face {
+    font-family: 'Roobert';
+    src: url('./fonts/Roobert/Roobert-Light.woff2')format("woff2");
+
+    font-weight: 100;
+    font-style: normal;
+    font-display: swap;
+
+    font-feature-settings: "ss04", "ss09", "ss11";
+}
+
+@font-face {
+    font-family: 'Roobert';
+    src: url('./fonts/Roobert/Roobert-Regular.woff2')format("woff2");
+
+    font-weight: 200;
+    font-style: normal;
+    font-display: swap;
+
+    font-feature-settings: "ss04", "ss09", "ss11";
+}
+
+@font-face {
+    font-family: 'Roobert';
+    src: url('./fonts/Roobert/Roobert-Medium.woff2')format("woff2");
+
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+
+    font-feature-settings: "ss04", "ss09", "ss11";
+}
+
+@font-face {
+    font-family: 'Roobert';
+    src: url('./fonts/Roobert/Roobert-SemiBold.woff2')format("woff2");
+
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+
+    font-feature-settings: "ss04", "ss09", "ss11";
+}
+
+@font-face {
+    font-family: 'Roobert';
+    src: url('./fonts/Roobert/Roobert-Bold.woff2')format("woff2");
+
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+
+    font-feature-settings: "ss04", "ss09", "ss11";
+}
+
+
+/* Roobert MONO */
+
+
+@font-face {
+    font-family: 'Roobert Mono';
+    src: url('./fonts/Roobert/RoobertSemiMono-Light.woff2')format("woff2");
+
+    font-weight: 100;
+    font-style: normal;
+    font-display: swap;
+
+}
+
+@font-face {
+    font-family: 'Roobert Mono';
+    src: url('./fonts/Roobert/RoobertSemiMono-Regular.woff2')format("woff2");
+
+    font-weight: 200;
+    font-style: normal;
+    font-display: swap;
+
+
+}
