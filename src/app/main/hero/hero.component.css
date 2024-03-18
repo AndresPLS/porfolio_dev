@@ -1,18 +1,25 @@
 .home__hero {
     display: flex;
-    padding: 8rem 10%;
+    flex-direction: column;
+    padding: 7rem 0 5rem 0;
     color: var(--main-color);
 }
 
-section {
-    & :first-child {
-        width: 50vw;
-        transform: translateY(-18px);
-        margin-right: 1rem;
-    }
 
-    & :last-child {
-        width: 50vw;
-        margin-left: 1rem;
-    }
+
+.hero__about {
+    width: 50vw;
+    font-size: 1.3rem;
+    font-weight: 100;
+    line-height: 1.6rem;
+    margin-top: 1rem;
+    width: 48vw;
+}
+
+
+.section__title {
+    width: 70vw;
+    transform: translateX(-10px);
+
+
 }
