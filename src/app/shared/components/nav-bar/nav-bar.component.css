@@ -1,14 +1,35 @@
-.nav__container {
-    display: flex;
-    justify-content: space-between;
+.nav__workIn span {
+    content: "\2022";
+    font-size: 3.4rem;
+    line-height: 0rem;
+    color: var(--secondary-color);
+    vertical-align: -0.5625rem;
+    animation: work-available infinite linear 1.4s;
+}
+
+.nav__container ul {
+    margin-bottom: 0;
+}
 
 
+@keyframes work-available {
+    0% {
+        opacity: 0;
+    }
 
-    & ul {
-        display: flex;
-        gap: 20px;
-        list-style: none;
-        padding-left: 0;
+    25% {
+        opacity: 0.66;
+    }
 
+    50% {
+        opacity: 1;
+    }
+
+    75% {
+        opacity: 0.66;
+    }
+
+    100% {
+        opacity: 0;
     }
 }

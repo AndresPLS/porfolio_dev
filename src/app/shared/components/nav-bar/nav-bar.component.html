@@ -1,17 +1,21 @@
 <div class="nav__container">
-    <ul>
-        <li routerLink="/" routerLinkActive="active">Andrés Polo</li>
-        <li routerLink="/home" routerLinkActive="active">Imagen</li>
-        <li>Trabajando en Madrid</li>
+    <ul class="nav__left">
+        <li routerLink="/" routerLinkActive="active" class="nav__nameBubble">Andrés Polo</li>
+        <li>
+            <figure class="nav__image"></figure>
+        </li>
+        <li class="nav__workIn">Disponible en Madrid <span> &#8226; </span></li>
     </ul>
 
 
-    <ul>
-        <li><a href="https://drive.google.com/file/d/10OXPBzUZjqQu7_kafp0kE6AfxaClc6XV/view?usp=sharing"
-                target="_blank">CV</a></li>
-        <li><a href="https://github.com/AndresPLS" target="_blank">Git Hub</a></li>
-        <li><a href="https://linkedin.com/in/apls" target="_blank">LinkedIn</a></li>
-        <li routerLink="/work" routerLinkActive="active">Trabajos</li>
-        <li routerLink="/contact" routerLinkActive="active">Contacto</li>
+    <ul class="nav__right">
+        <div class="nav__bigBubble">
+            <li><a href="https://drive.google.com/file/d/10OXPBzUZjqQu7_kafp0kE6AfxaClc6XV/view?usp=sharing"
+                    target="_blank" class="nav__cv">CV</a></li>
+            <li><a href="https://github.com/AndresPLS" target="_blank" class="nav__bubble">Git Hub</a></li>
+            <li><a href="https://linkedin.com/in/apls" target="_blank" class="nav__bubble">LinkedIn</a></li>
+        </div>
+        <li routerLink="/work" routerLinkActive="active" class="nav__bubble">Trabajos</li>
+        <li routerLink="/contact" routerLinkActive="active" class="nav__bubble">Contacto</li>
     </ul>
 </div>
