@@ -29,14 +29,14 @@ section {
 
 .contact__info {
     display: flex;
-    transform: translateY(-3px);
+    transform: translateY(-2px);
 
     & ul {
 
         width: 33vw;
-        font-size: 1.5rem;
+        font-size: 1.33rem;
         font-weight: 100;
-        line-height: 2.8rem;
+        line-height: 2.4rem;
         letter-spacing: -0.02rem;
         padding-left: 0.5rem;
         margin-bottom: 0;
@@ -66,3 +66,23 @@ section {
         font-weight: 300;
     }
 }
+
+
+@media (width <=75rem) {
+    .contact__info {
+        & ul {
+            width: 31vw;
+            font-size: 1.3rem;
+        }
+
+        & .info__social {
+            width: 20vw;
+        }
+    }
+}
+
+@media (width <=64rem) {}
+
+@media (width <=48rem) {}
+
+@media (width <=30rem) {}

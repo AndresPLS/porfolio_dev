@@ -10,10 +10,9 @@
     --secondary-font: 'Roobert Mono', serif;
     --joker-font: sans-serif;
 
-
     /* Colors */
     --main-color: #002A94;
-    --secondary-color: #06ea43;
+    --secondary-color: #0df04a;
     --third-color: #6788DE;
 
     --bg-color: #FCFCFD;
@@ -51,20 +50,25 @@
 /* GENERALES */
 html {
     font-size: 16px;
+    font-size: var(--font-size, 16px)
 }
 
 body {
 
     min-height: 100vh;
+    font-family: var(--main-font);
     font-size: 1rem;
     font-weight: 200;
-    font-family: var(--main-font);
+    line-height: 1.4;
     color: var(--black);
     background-color: var(--bg-color);
-    line-height: 1.4;
     font-smooth: always;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+}
+
+::selection {
+    background: var(--secondary-color);
 }
 
 header {
@@ -80,11 +84,14 @@ header {
 }
 
 .section__title {
+    width: 70vw;
+    margin-bottom: 0;
     font-size: 10rem;
     letter-spacing: -0.5rem;
     line-height: 8.3rem;
     color: var(--main-color);
     text-wrap: balance;
+    transform: translateX(-10px);
 }
 
 
@@ -146,7 +153,7 @@ header {
     padding: 0.36rem 1.5rem 0.4rem 1.5rem;
     border-radius: var(--main-b-radius);
     transition: 0.3s;
-
+    cursor: pointer;
 
 }
 
@@ -184,14 +191,9 @@ header {
     color: var(--dark-20);
     background-color: var(--grey-90);
     padding: 0.36rem 1.3rem 0.4rem 1.5rem;
-
     border-radius: var(--main-b-radius);
     transition: 0.3s;
 
-    &:hover {
-        cursor: pointer;
-        background-color: var(--secondary-color);
-    }
 }
 
 
@@ -214,10 +216,34 @@ header {
 /* MEDIA QUERYS */
 
 
-@media (max-width: 75rem) {}
+@media (width <=75rem) {
+    :root {
+        --font-size: 15px;
+    }
 
-@media (max-width: 64rem) {}
+    .section__title {
+        font-size: 9.3rem;
+        line-height: 7.8rem;
+    }
+}
 
-@media (max-width: 48rem) {}
+@media (width <=64rem) {
+    :root {
+        --font-size: 14px;
+    }
 
-@media (max-width: 30rem) {}
+    .section__title {
+        font-size: 8.3rem;
+        line-height: 7rem;
+        letter-spacing: -0.45rem;
+        transform: translateX(-8px);
+    }
+}
+
+@media (width <=48rem) {
+    :root {
+        --font-size: 13px;
+    }
+}
+
+@media (width <=30rem) {}

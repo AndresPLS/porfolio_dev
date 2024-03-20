@@ -1,5 +1,5 @@
 section {
-    margin-bottom: 14rem;
+    margin-bottom: 15rem;
 }
 
 article {
@@ -21,13 +21,13 @@ h2 {
 .skills__knowledge {
     border-top: 1px solid var(--dark-grey);
     padding-top: 1.3rem;
-    margin-bottom: 6rem;
+    margin-bottom: 5rem;
 }
 
 .skills__aptitudes {
     border-top: 1px solid var(--dark-grey);
     padding-top: 1.3rem;
-    margin-bottom: 6rem;
+    margin-bottom: 5rem;
 }
 
 .skills__bubbleList {
@@ -73,3 +73,23 @@ h2 {
     color: var(--dark-30);
 
 }
+
+
+@media (width <=75rem) {
+    h2 {
+        font-size: 4.6rem;
+        line-height: 2.4rem;
+    }
+}
+
+@media (width <=64rem) {
+    h2 {
+        font-size: 3.8rem;
+        line-height: 2.3rem;
+        letter-spacing: -0.18rem;
+    }
+}
+
+@media (width <=48rem) {}
+
+@media (width <=30rem) {}

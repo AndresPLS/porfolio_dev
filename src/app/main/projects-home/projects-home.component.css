@@ -1,5 +1,6 @@
 section article {
     width: 50%;
+    margin-bottom: 6rem;
 }
 
 article a figure {
@@ -30,7 +31,8 @@ img {
 .home__projects {
     display: flex;
     gap: var(--main-padding);
-    margin-bottom: 8rem;
+    margin-top: 5.4rem;
+    margin-bottom: 3rem;
 }
 
 .home__projects h2 {
@@ -46,6 +48,7 @@ img {
     font-weight: 100;
     line-height: 1.5rem;
     margin-bottom: 0rem;
+    text-wrap: pretty;
 }
 
 .projects__mainInfo {
@@ -55,8 +58,8 @@ img {
 
         & figure img {
             filter: blur(1.1rem);
-            transform: scale(1.13);
-            -webkit-transform: scale(1.13);
+            transform: scale(1.1);
+            -webkit-transform: scale(1.1);
 
         }
     }
@@ -95,3 +98,32 @@ img {
     width: 80%;
     margin-bottom: 1.2rem;
 }
+
+
+
+
+
+
+@media (width <=75rem) {}
+
+@media (width <=64rem) {}
+
+@media (width <=56rem) {
+
+    section article {
+        width: 100%;
+    }
+
+    .home__projects {
+
+        flex-direction: column;
+        margin-top: 5.8rem;
+        margin-bottom: 9rem;
+    }
+
+}
+
+@media (width <=48rem) {}
+
+
+@media (width <=30rem) {}
