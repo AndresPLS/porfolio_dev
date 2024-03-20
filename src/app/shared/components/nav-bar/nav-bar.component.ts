@@ -1,6 +1,6 @@
 import { CommonModule } from '@angular/common';
-import { Component } from '@angular/core';
-import { RouterModule } from '@angular/router';
+import { Component, OnInit, inject } from '@angular/core';
+import { ActivatedRoute, RouterModule } from '@angular/router';
 
 @Component({
   selector: 'app-nav-bar',
@@ -9,8 +9,22 @@ import { RouterModule } from '@angular/router';
   templateUrl: './nav-bar.component.html',
   styleUrl: './nav-bar.component.css'
 })
-export class NavBarComponent {
+export class NavBarComponent implements OnInit {
+
+  activeRoute = inject(ActivatedRoute);
 
 
+  ngOnInit() {
+    this.activeRoute.fragment.subscribe((data) => {
+      //console.log(data);
+      this.JumpToSection(data);
+    });
+
+
+  }
+
+  JumpToSection(section: any) {
+    document.getElementById(section)!.scrollIntoView({ behavior: 'smooth' });
+  }
 
 }
