@@ -115,15 +115,21 @@ img {
     }
 
     .home__projects {
-
         flex-direction: column;
         margin-top: 5.8rem;
         margin-bottom: 9rem;
     }
 
+
+
+
 }
 
-@media (width <=48rem) {}
+@media (width <=48rem) {
+    .home__projects {
+        margin-top: 4.6rem;
+        margin-bottom: 4rem;
+    }
+}
 
-
-@media (width <=30rem) {}
+@media (width <=37.5rem) {}
