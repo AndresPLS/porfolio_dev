@@ -14,6 +14,7 @@ export class NavBarComponent implements OnInit {
   activeRoute = inject(ActivatedRoute);
 
 
+
   ngOnInit() {
     this.activeRoute.fragment.subscribe((data) => {
       //console.log(data);
@@ -26,5 +27,6 @@ export class NavBarComponent implements OnInit {
   JumpToSection(section: any) {
     document.getElementById(section)!.scrollIntoView({ behavior: 'smooth' });
   }
+
 
 }

@@ -1,6 +1,12 @@
-<div class="nav__container">
+<div class="collapse navbar-collapse nav__blurBackground" id="navbarSupportedContent" type="button"
+    data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"></div>
+
+<div class="nav__container navbar navbar-expand-md">
+
+
     <ul class="nav__left">
-        <li routerLink="/" fragment="home" routerLinkActive="active" class="nav__nameBubble">Andrés Polo</li>
+        <li routerLink="/" fragment="home" routerLinkActive="active" class="nav__nameBubble">Andrés Polo
+        </li>
         <li>
             <figure class="nav__image"></figure>
         </li>
@@ -8,14 +14,31 @@
     </ul>
 
 
-    <ul class="nav__right">
-        <div class="nav__bigBubble">
-            <li><a href="https://drive.google.com/file/d/10OXPBzUZjqQu7_kafp0kE6AfxaClc6XV/view?usp=sharing"
-                    target="_blank" class="nav__cv">CV</a></li>
-            <li><a href="https://github.com/AndresPLS" target="_blank" class="nav__bubble">Git Hub</a></li>
-            <li><a href="https://linkedin.com/in/apls" target="_blank" class="nav__bubble">LinkedIn</a></li>
+    <button class="navbar-toggler " fragment="home" type="button" data-bs-toggle="collapse"
+        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+        aria-label="Toggle navigation">
+        <span class="nav__bubble">Más info</span>
+
+    </button>
+
+
+    <div class="nav__first collapse navbar-collapse" id="navbarSupportedContent">
+        <div class="navigate navbar-nav  ms-auto">
+            <ul class="nav__right navbar-nav ">
+                <div class="nav__bigBubble">
+                    <li><a href="https://drive.google.com/file/d/10OXPBzUZjqQu7_kafp0kE6AfxaClc6XV/view?usp=sharing"
+                            target="_blank" class="nav__cv">CV</a></li>
+                    <li><a href="https://github.com/AndresPLS" target="_blank" class="nav__bubble">Git Hub</a></li>
+                    <li><a href="https://linkedin.com/in/apls" target="_blank" class="nav__bubble">LinkedIn</a></li>
+                </div>
+                <li routerLink="/" fragment="work" class="nav__bubble" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent">Trabajo</li>
+                <li routerLink="/" fragment="contact" class="nav__bubble" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent">Contacto</li>
+            </ul>
         </div>
-        <li routerLink="/" fragment="work" routerLinkActive="active" class="nav__bubble">Trabajos</li>
-        <li routerLink="/" fragment="contact" routerLinkActive="active" class="nav__bubble">Contacto</li>
-    </ul>
+
+    </div>
+
+
 </div>
